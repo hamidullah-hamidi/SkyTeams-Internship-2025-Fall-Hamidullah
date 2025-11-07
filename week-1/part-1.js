@@ -60,4 +60,11 @@ const restaurantsDetails = [
   { name: 'mehman', city: 'herat' },
 ];
 
+// Map
 const restaurantsMap = new Map();
+
+restaurantsDetails.forEach((rest) => {
+  restaurantsMap.set(rest.name, rest.name);
+});
+
+console.log(restaurantsMap.get('mehman'));
