@@ -67,4 +67,58 @@ restaurantsDetails.forEach((rest) => {
   restaurantsMap.set(rest.name, rest.name);
 });
 
-console.log(restaurantsMap.get('mehman'));
+// console.log(restaurantsMap.get('mehman'));
+
+// count repeated ones
+const words = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+
+const wordCount = new Map();
+
+words.forEach((word) => {
+  wordCount.set(word, (wordCount.get(word) || 0) + 1);
+});
+
+// console.log(wordCount);
+// console.log(Array.from(wordCount));
+
+// find the largest Number
+const array = [1, 3, 6, 3, 15, 3];
+
+let largest = 0;
+
+for (let e of array) {
+  if (e > largest) largest = e;
+}
+
+// console.log(largest);
+
+// concept: Clean code
+
+// messy code
+function x(a, b) {
+  let c = a + b;
+  console.log('Sum:', c);
+  if (c > 10) {
+    console.log('Big number');
+  } else {
+    console.log('Small number');
+  }
+}
+
+function sumToNumber(num1, num2) {
+  let sum = num1 + num2;
+
+  console.log('sum:', sum);
+
+  if (sum > 10) return 'Big number';
+  else return 'Small number';
+}
+
+console.log(sumToNumber(1, 2));
+
+let arr = [3, 5, 7, 9];
+let total = 0;
+for (let i = 0; i < arr.length; i++) {
+  total += arr[i];
+}
+console.log('avg:', total / arr.length);
