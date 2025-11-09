@@ -145,10 +145,10 @@ console.assert(add(2, 3) === 5, '❌ Test Failed');
 console.assert(add(0, 3) === 3, '❌ Test Failed');
 console.assert(add(-2, 3) === 1, '❌ Test Failed');
 
-
+*/
 
 // 2) test for reversing an list/string
-const reverse = (list) => {
+export const reverse = (list) => {
   let reverse = [];
 
   for (let i = list.length - 1; i >= 0; i--) {
@@ -158,15 +158,13 @@ const reverse = (list) => {
   return reverse;
 };
 
-const result = reverse([1, 2, 3]);
-const expected = [3, 2, 1];
+// const result = reverse([1, 2, 3]);
+// const expected = [3, 2, 1];
 
-if (JSON.stringify(result) === JSON.stringify(expected)) console.log('✅ Test passed');
-else console.log('❌ Test Failed');
+// if (JSON.stringify(result) === JSON.stringify(expected)) console.log('✅ Test passed');
+// else console.log('❌ Test Failed');
 
-*/
-
-function largest(arr) {
+export function largest(arr) {
   let max = -Infinity;
 
   for (let e of arr) {
@@ -175,8 +173,8 @@ function largest(arr) {
 
   return max;
 }
-const result = largest([1, 2, 3]);
-const expected = 3;
+// const result = largest([1, 2, 3]);
+// const expected = 3;
 
-if (result === expected) console.log('✅ Test passed');
-else console.log('❌ Test Failed');
+// if (result === expected) console.log('✅ Test passed');
+// else console.log('❌ Test Failed');
