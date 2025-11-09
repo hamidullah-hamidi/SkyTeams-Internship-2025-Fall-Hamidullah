@@ -114,11 +114,24 @@ function sumToNumber(num1, num2) {
   else return 'Small number';
 }
 
-console.log(sumToNumber(1, 2));
+// console.log(sumToNumber(1, 2));
 
 let arr = [3, 5, 7, 9];
 let total = 0;
 for (let i = 0; i < arr.length; i++) {
   total += arr[i];
 }
-console.log('avg:', total / arr.length);
+// console.log('avg:', total / arr.length);
+
+// Testing
+
+// test for sum two number
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+const result = add(2, 3); // actual output
+const expected = 5; // expected output
+
+if (result === expected) console.log('✅ Test passed');
+else console.log('❌ Test Failed');
