@@ -1,3 +1,5 @@
+// part 1 fundamental
+/*
 // Swap the values of two variables
 const swapValues = () => {
   let a = 10;
@@ -122,16 +124,59 @@ for (let i = 0; i < arr.length; i++) {
   total += arr[i];
 }
 // console.log('avg:', total / arr.length);
+*/
 
 // Testing
-
-// test for sum two number
+/*
+// 1) test for sum two number
 function add(num1, num2) {
   return num1 + num2;
 }
 
 const result = add(2, 3); // actual output
 const expected = 5; // expected output
+
+// way 1 (if else)
+if (result === expected) console.log('✅ Test passed');
+else console.log('❌ Test Failed');
+
+//  way 2 (assert)
+console.assert(add(2, 3) === 5, '❌ Test Failed');
+console.assert(add(0, 3) === 3, '❌ Test Failed');
+console.assert(add(-2, 3) === 1, '❌ Test Failed');
+
+
+
+// 2) test for reversing an list/string
+const reverse = (list) => {
+  let reverse = [];
+
+  for (let i = list.length - 1; i >= 0; i--) {
+    reverse.push(list[i]);
+  }
+
+  return reverse;
+};
+
+const result = reverse([1, 2, 3]);
+const expected = [3, 2, 1];
+
+if (JSON.stringify(result) === JSON.stringify(expected)) console.log('✅ Test passed');
+else console.log('❌ Test Failed');
+
+*/
+
+function largest(arr) {
+  let max = -Infinity;
+
+  for (let e of arr) {
+    if (e > max) max = e;
+  }
+
+  return max;
+}
+const result = largest([1, 2, 3]);
+const expected = 3;
 
 if (result === expected) console.log('✅ Test passed');
 else console.log('❌ Test Failed');
