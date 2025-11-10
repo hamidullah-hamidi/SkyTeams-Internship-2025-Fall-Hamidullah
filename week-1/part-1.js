@@ -149,13 +149,22 @@ console.assert(add(-2, 3) === 1, '❌ Test Failed');
 
 // 2) test for reversing an list/string
 export const reverse = (list) => {
-  let reverse = [];
+  let reverseArray = [];
+  let reverseString = '';
 
-  for (let i = list.length - 1; i >= 0; i--) {
-    reverse.push(list[i]);
+  if (Array.isArray(list)) {
+    for (let i = list.length - 1; i >= 0; i--) {
+      reverseArray.push(list[i]);
+    }
+    return reverseArray;
   }
 
-  return reverse;
+  if (typeof list === 'string') {
+    for (let i = list.length - 1; i >= 0; i--) {
+      reverseString += list[i];
+    }
+    return reverseString;
+  }
 };
 
 // const result = reverse([1, 2, 3]);

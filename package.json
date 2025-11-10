@@ -1,9 +1,11 @@
 {
   "name": "skyteams-internship",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
     "test": "jest"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.10"
+  }
 }
