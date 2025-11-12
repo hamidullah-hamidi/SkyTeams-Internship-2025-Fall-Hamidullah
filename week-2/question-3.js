@@ -4,7 +4,7 @@
 
 function calculateAreaAndPerimeter(length, width) {
   const area = length * width;
-  const perimeter = 0;
+  const perimeter = (length + width) * 2;
 
   return `Area: ${area}, Perimeter: ${perimeter}`;
 }

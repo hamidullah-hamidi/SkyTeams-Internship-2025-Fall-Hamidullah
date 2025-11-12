@@ -13,8 +13,8 @@ function temperatureConvertor(celsius, fahrenheit) {
   const F = celsius * (9 / 5) + 32;
   const C = ((fahrenheit - 32) * 5) / 9;
 
-  if (celsius) return F;
-  if (fahrenheit) return C;
+  if (celsius !== null) return F;
+  if (fahrenheit !== null) return C;
 }
 
 console.log(temperatureConvertor(null, 86));
